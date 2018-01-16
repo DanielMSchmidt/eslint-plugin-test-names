@@ -1,4 +1,4 @@
-# eslint-plugin-test-names
+# eslint-plugin-test-names [![Build Status](https://travis-ci.org/DanielMSchmidt/eslint-plugin-test-names.svg?branch=master)](https://travis-ci.org/DanielMSchmidt/eslint-plugin-test-names)
 
 Validates if the test names are set up correctly
 
