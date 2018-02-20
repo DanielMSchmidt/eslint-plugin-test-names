@@ -35,7 +35,7 @@ Then configure the rules you want to use under the rules section.
   "rules": {
     "test-names/blacklist-word-in-test-name": [
       2,
-      { words: ["should", "Should", "Needs to", "needs to"] }
+      { words: ["should", "needs to"], caseInsensitive: true }
     ]
   }
 }

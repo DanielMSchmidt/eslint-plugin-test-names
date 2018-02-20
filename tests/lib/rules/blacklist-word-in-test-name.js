@@ -62,6 +62,16 @@ ruleTester.run("blacklist-word-in-test-name", rule, {
           type: "CallExpression"
         }
       ]
+    },
+    {
+      code: 'it("Should do XYZ")',
+      options: [{ words: ["should"], caseInsensitive: true }],
+      errors: [
+        {
+          message: "test name must not have the word 'should' in it.",
+          type: "CallExpression"
+        }
+      ]
     }
   ]
 });
