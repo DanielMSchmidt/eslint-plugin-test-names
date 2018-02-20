@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-test-names",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Validates if the test names are set up correctly",
   "keywords": [
     "eslint",
