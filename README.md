@@ -1,6 +1,6 @@
 # eslint-plugin-test-names [![Build Status](https://travis-ci.org/DanielMSchmidt/eslint-plugin-test-names.svg?branch=master)](https://travis-ci.org/DanielMSchmidt/eslint-plugin-test-names)
 
-Validates if the test names are set up correctly
+Validates if the test names don't contain a certain set of words
 
 ## Installation
 
@@ -24,23 +24,23 @@ Add `test-names` to the plugins section of your `.eslintrc` configuration file. 
 
 ```json
 {
-    "plugins": [
-        "test-names"
-    ]
+  "plugins": ["test-names"]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "test-names/blacklist-word-in-test-name": [2, "should"]
-    }
+  "rules": {
+    "test-names/blacklist-word-in-test-name": [
+      2,
+      { words: ["should", "Should", "Needs to", "needs to"] }
+    ]
+  }
 }
 ```
 
 ## Supported Rules
 
-- `blacklist-word-in-test-name`: Blacklists a word in the name of a test
+* `blacklist-word-in-test-name`: Blacklists a word in the name of a test
