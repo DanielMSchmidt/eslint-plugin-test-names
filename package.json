@@ -12,6 +12,10 @@
   "scripts": {
     "test": "mocha tests --recursive"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DanielMSchmidt/eslint-plugin-test-names.git"
+  },
   "dependencies": {
     "requireindex": "~1.1.0"
   },
